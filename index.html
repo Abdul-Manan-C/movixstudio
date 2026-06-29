@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovixStudio — Premium Video Editing Agency</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Subtle Reading Progress Bar -->
+  <div class="reading-progress-container" id="reading-progress-container" aria-hidden="true">
+    <div id="reading-progress-bar" class="reading-progress-bar"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/index.html" class="logo-link">
+        <svg class="logo-svg" width="70" height="128" viewBox="0 0 70 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.1095 86C8.10954 88.5 8.10955 95 8.10955 95C8.10955 95 2.59148 90.1988 1.10955 86C-0.450147 81.5809 -0.287311 78.4733 1.10955 74C2.53045 69.4497 4.56775 67.1905 8.10955 64C10.8469 61.5342 16.1095 59 16.1095 59L31.1095 51L46.1095 44L59.1095 38L69.1096 32V45.2122C69.1096 45.2122 69.1096 49 68.6096 51C68.1096 53 66.6095 55 62.1095 59C57.6095 63 48.6095 66 37.1095 72C25.6095 78 14.1095 83.5 11.1095 86Z" fill="url(#g0)"/>
+          <path d="M68 16C69.5 5 68 0 68 0C68 0 17.5 23 8.50002 29C-0.5 35 -2.52934 50.7689 8.00003 61C8.00003 61 7 52.5 21.5 45C36 37.5 66.5 27 68 16Z" fill="url(#g1)"/>
+          <path d="M68.104 83C69.604 72 68.104 67 68.104 67C68.104 67 17.604 90 8.60403 96C-0.395981 102 -2.42532 117.769 8.10405 128C8.10405 128 7.10402 119.5 21.604 112C36.104 104.5 66.604 94 68.104 83Z" fill="url(#g1)"/>
+          <path d="M68 122L43 108.5V107L68 95V122Z" fill="url(#g2)"/>
+          <defs>
+            <linearGradient id="g0" x1="69" y1="58" x2="0" y2="56.5" gradientUnits="userSpaceOnUse">
+              <stop offset="0.08" stop-color="#C5A438"/>
+              <stop offset="0.32" stop-color="#FCED92"/>
+              <stop offset="0.51" stop-color="#91722F"/>
+              <stop offset="0.95" stop-color="#1F180E"/>
+            </linearGradient>
+            <linearGradient id="g1" x1="68" y1="30" x2="0" y2="30" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#101010"/>
+              <stop offset="0.30" stop-color="#504D4D"/>
+              <stop offset="0.52" stop-color="#191919"/>
+              <stop offset="1" stop-color="#070707"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="43" y1="106" x2="68" y2="106" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#474747"/>
+              <stop offset="1" stop-color="#141414"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">MOVIX<span class="studio-part">STUDIO</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="studio-status">
+          <span class="status-dot"></span>
+          <span class="status-text">STUDIO ACTIVE</span>
+        </div>
+        <a href="/contact.html" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.75rem;">Order Now</a>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-overlay"></div>
+    <video class="hero-bg-video" autoplay muted loop playsinline>
+      <source src="https://res.cloudinary.com/dr7tspaod/video/upload/vc_auto,q_auto,f_auto/v1776181626/MovixStudio_zec2na.mp4" type="video/mp4">
+    </video>
+    
+    <div class="container">
+      <span class="pre-heading">Boutique Editing House</span>
+      <h1>We Don't Just Edit Videos. We Craft <span>Hooks</span>, <span>Stories</span>, and <span>Results</span>.</h1>
+      <p>High-end cinematic editing for brands, creators, and agencies seeking ultimate retention and viewer engagement.</p>
+      
+      <div class="hero-cta">
+        <a href="/contact.html" class="btn btn-primary">Order Now</a>
+        <a href="#showreel-section" class="btn btn-outline">Play Showreel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dedicated Showreel Section (Clients see motion on first scroll) -->
+  <section class="showreel-section" id="showreel-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="pre-heading">OUR MOTION SIGNATURE</span>
+        <h2>The Showreel</h2>
+        <p>A fast-paced sequence of cinematic world-building, sound engineering, and precision storytelling.</p>
+      </div>
+
+      <div class="showreel-container liquid-glass">
+        <div class="showreel-video-wrapper">
+          <video id="main-showreel-video" class="showreel-video" playsinline controls preload="auto">
+            <source src="https://res.cloudinary.com/dr7tspaod/video/upload/vc_auto,q_auto,f_auto/v1776181626/MovixStudio_zec2na.mp4" type="video/mp4">
+          </video>
+          <div class="showreel-overlay" id="showreel-overlay">
+            <button class="showreel-play-btn" aria-label="Play Showreel">
+              <i data-lucide="play"></i>
+            </button>
+            <span class="showreel-overlay-text">ENTER MOVEMENT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="ticker-wrapper">
+        <span class="trust-label">Industry Standard Stack</span>
+        <div class="ticker-container">
+          <div class="ticker-content">
+            <div class="ticker-items">
+              <div class="trust-item"><i data-lucide="layers"></i> Premiere Pro</div>
+              <span class="ticker-separator"></span>
+              <div class="trust-item"><i data-lucide="aperture"></i> After Effects</div>
+              <span class="ticker-separator"></span>
+              <div class="trust-item"><i data-lucide="palette"></i> DaVinci Resolve</div>
+              <span class="ticker-separator"></span>
+              <div class="trust-item"><i data-lucide="monitor"></i> Final Cut Pro</div>
+              <span class="ticker-separator"></span>
+              <!-- Duplicate for infinite scrolling ticker effect -->
+              <div class="trust-item"><i data-lucide="layers"></i> Premiere Pro</div>
+              <span class="ticker-separator"></span>
+              <div class="trust-item"><i data-lucide="aperture"></i> After Effects</div>
+              <span class="ticker-separator"></span>
+              <div class="trust-item"><i data-lucide="palette"></i> DaVinci Resolve</div>
+              <span class="ticker-separator"></span>
+              <div class="trust-item"><i data-lucide="monitor"></i> Final Cut Pro</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Process Section -->
+  <section class="section-padding" style="background: var(--surface-alt);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Cinematic Process</h2>
+        <p>How we transform your raw footage into high-performing visual masterpieces.</p>
+      </div>
+
+      <div class="bento-container">
+        <div class="bento-item liquid-glass reveal-on-scroll" data-delay="0">
+          <div class="step-num-watermark">01</div>
+          <span class="step-number">01. Strategy</span>
+          <h3>Strategy & Intake</h3>
+          <p>We analyze your brand tone, retention goals, and audience psychology to build a custom roadmap for the edit.</p>
+        </div>
+        <div class="bento-item liquid-glass featured-card reveal-on-scroll" data-delay="100">
+          <div class="step-num-watermark">02</div>
+          <span class="step-number">02. Crafting</span>
+          <h3>The Cinematic Craft</h3>
+          <p>Using premium pacing, sound design, color grading, and animation, we carve out the soul of your story.</p>
+        </div>
+        <div class="bento-item liquid-glass reveal-on-scroll" data-delay="200">
+          <div class="step-num-watermark">03</div>
+          <span class="step-number">03. Refinement</span>
+          <h3>Refinement Loop</h3>
+          <p>Collaborative feedback and frame-by-frame adjustments ensure the video completely matches your expectations.</p>
+        </div>
+        <div class="bento-item liquid-glass reveal-on-scroll" data-delay="300">
+          <div class="step-num-watermark">04</div>
+          <span class="step-number">04. Deployment</span>
+          <h3>Premium Delivery</h3>
+          <p>Final master export in broadcast quality with localized subtitles, aspect ratio optimizations, and high-retention metadata.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="stat-item">
+          <h3>150+</h3>
+          <p>Global Clients</p>
+        </div>
+        <div class="stat-item">
+          <h3>10M+</h3>
+          <p>Total Views Generated</p>
+        </div>
+        <div class="stat-item">
+          <h3>98%</h3>
+          <p>Client Retention Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The MovixStudio Advantage (Bento Grid) -->
+  <section class="section-padding" id="advantage" style="border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <h2>The MovixStudio Advantage</h2>
+        <p>Why elite creators, agencies, and luxury brands trust us over standard post-production freelancers.</p>
+      </div>
+
+      <div class="advantage-grid">
+        <div class="advantage-card featured-advantage liquid-glass">
+          <span class="advantage-chip"><i data-lucide="zap"></i> Express Delivery</span>
+          <h3>Guaranteed 48-Hour Delivery</h3>
+          <p>Rapid deployment options to meet strict broadcast and marketing launch deadlines without compromising cinematic quality.</p>
+        </div>
+        <div class="advantage-card liquid-glass">
+          <span class="advantage-chip"><i data-lucide="shield"></i> Elite Security</span>
+          <h3>Encrypted File Workflows</h3>
+          <p>Your raw, unreleased footage and pre-launch campaigns are protected by high-grade isolated physical hardware pipelines.</p>
+        </div>
+        <div class="advantage-card liquid-glass">
+          <span class="advantage-chip"><i data-lucide="headphones"></i> 24/7 Support</span>
+          <h3>Direct Liaison Channel</h3>
+          <p>Instant communication line with your dedicated creative editor for real-time adjustments and frame-accurate review loops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Retention Simulator (The Anatomy of an Edit) -->
+  <section class="section-padding retention-section" id="retention" style="background: var(--surface-alt); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="pre-heading" style="color: var(--accent); font-weight: 600; letter-spacing: 0.15em; font-size: 11px;">REQUISITE RETENTION</span>
+        <h2>The Anatomy of a High-Retention Edit</h2>
+        <p>Toggle the professional editing layers below to see how each discipline transforms viewer psychological engagement and retention curves in real-time.</p>
+      </div>
+
+      <div class="retention-dashboard liquid-glass">
+        <!-- Control Panel (Toggles) -->
+        <div class="retention-controls">
+          <h3 class="controls-title"><i data-lucide="sliders"></i> Editing Suite Console</h3>
+          <p class="controls-subtitle">Toggle layers to simulate rendering a premium edit:</p>
+          
+          <div class="control-toggle-card active" data-layer="hook">
+            <div class="toggle-info">
+              <span class="toggle-badge">Layer 01</span>
+              <h4>3-Second Visual Hook</h4>
+              <p>Dynamic pattern interrupt or title reveal in first 3 seconds to halt scrolling.</p>
+            </div>
+            <div class="toggle-switch">
+              <div class="switch-handle"></div>
+            </div>
+          </div>
+
+          <div class="control-toggle-card active" data-layer="sfx">
+            <div class="toggle-info">
+              <span class="toggle-badge">Layer 02</span>
+              <h4>Immersive SFX & Sound Design</h4>
+              <p>Hand-crafted Foley, sub-drops, swooshes, and atmospheric noise to build depth.</p>
+            </div>
+            <div class="toggle-switch">
+              <div class="switch-handle"></div>
+            </div>
+          </div>
+
+          <div class="control-toggle-card active" data-layer="subtitles">
+            <div class="toggle-info">
+              <span class="toggle-badge">Layer 03</span>
+              <h4>Kinetic Typography & Captions</h4>
+              <p>Stylized text syncing with vocal rhythms, emojis, and visual highlight popups.</p>
+            </div>
+            <div class="toggle-switch">
+              <div class="switch-handle"></div>
+            </div>
+          </div>
+
+          <div class="control-toggle-card active" data-layer="color">
+            <div class="toggle-info">
+              <span class="toggle-badge">Layer 04</span>
+              <h4>DaVinci Resolve Color Grading</h4>
+              <p>LUT corrections, skin-tone matching, and high-end cinematic tone curves.</p>
+            </div>
+            <div class="toggle-switch">
+              <div class="switch-handle"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Analytics & Chart Screen -->
+        <div class="retention-display">
+          <div class="display-header">
+            <div class="display-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="display-title">RETENTION_PLOTTER_V2.0</div>
+            <div class="display-status-tag"><span class="pulse-icon"></span> SIMULATING LIVE FEEDBACK</div>
+          </div>
+          
+          <div class="display-screen">
+            <!-- Simulated Video Preview Frame -->
+            <div class="simulated-preview" id="simulated-preview">
+              <div class="preview-overlay">
+                <span class="preview-resolution">1080x1920 (9:16)</span>
+                <!-- The dynamic visual states of our simulated video card -->
+                <div class="preview-hook-text" id="preview-hook">STOP SCROLLING!</div>
+                <div class="preview-subtitle-text" id="preview-subtitles">"This is how we <span class="highlight">multiply</span> your views"</div>
+                <div class="preview-color-overlay" id="preview-color"></div>
+                <div class="preview-wave-icon" id="preview-sfx"><i data-lucide="volume-2"></i> SOUND ENGAGED</div>
+              </div>
+              <img src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?q=80&w=800&auto=format&fit=crop" class="preview-bg-image" alt="Editing Workspace Screen">
+            </div>
+
+            <!-- SVG Graph showing retention line -->
+            <div class="retention-chart-container">
+              <div class="chart-y-axis">
+                <span>100%</span>
+                <span>50%</span>
+                <span>0%</span>
+              </div>
+              <div class="chart-canvas-wrapper">
+                <svg viewBox="0 0 500 200" class="retention-svg-chart">
+                  <defs>
+                    <linearGradient id="chart-grad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <!-- Background grid lines -->
+                  <line x1="0" y1="50" x2="500" y2="50" stroke="rgba(255, 255, 255, 0.05)" stroke-dasharray="4,4" />
+                  <line x1="0" y1="100" x2="500" y2="100" stroke="rgba(255, 255, 255, 0.05)" stroke-dasharray="4,4" />
+                  <line x1="0" y1="150" x2="500" y2="150" stroke="rgba(255, 255, 255, 0.05)" stroke-dasharray="4,4" />
+                  
+                  <!-- Dynamic retention curve line -->
+                  <path id="retention-curve-path" d="M 0,50 L 500,150" fill="url(#chart-grad)" stroke="var(--accent)" stroke-width="3" style="transition: d 0.6s cubic-bezier(0.16, 1, 0.3, 1);"/>
+                  <!-- Interactive points -->
+                  <circle id="chart-point-hook" cx="50" cy="50" r="5" fill="#FAF8F3" stroke="var(--accent)" stroke-width="2" />
+                  <circle id="chart-point-mid" cx="250" cy="100" r="5" fill="#FAF8F3" stroke="var(--accent)" stroke-width="2" />
+                  <circle id="chart-point-end" cx="450" cy="150" r="5" fill="#FAF8F3" stroke="var(--accent)" stroke-width="2" />
+                </svg>
+                <div class="chart-x-axis">
+                  <span>0:00 (Hook)</span>
+                  <span>0:15 (Mid)</span>
+                  <span>0:30 (End)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Metrics readout -->
+          <div class="display-metrics">
+            <div class="metric-block">
+              <span class="metric-label">Estimated Retain Rate</span>
+              <span class="metric-val" id="metric-retain">82%</span>
+            </div>
+            <div class="metric-block">
+              <span class="metric-label">Avg. Duration Spurt</span>
+              <span class="metric-val" id="metric-duration">24.6s</span>
+            </div>
+            <div class="metric-block">
+              <span class="metric-label">Virality Factor</span>
+              <span class="metric-val" id="metric-virality" style="color: var(--accent);">EXTREME</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restored Agency Showcase (Horizontal scroll slider with mixed orientations) -->
+  <section class="section-padding agency-showcase" id="showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="pre-heading">AGENCY SHOWCASE</span>
+        <h2>Our Portfolio</h2>
+        <p>A hand-picked curation of our premium visual cuts. Hover over any tile to play the sequence instantly.</p>
+      </div>
+
+      <!-- Interactive Category Filters -->
+      <div class="showcase-filters">
+        <button class="filter-btn active" data-filter="all">All Cuts</button>
+        <button class="filter-btn" data-filter="commercial">Commercials</button>
+        <button class="filter-btn" data-filter="narrative">Narratives</button>
+        <button class="filter-btn" data-filter="social">9:16 Retention Loops</button>
+        <button class="filter-btn" data-filter="luxury">Luxury Travel</button>
+      </div>
+    </div>
+    
+    <div class="showcase-slider-outer">
+      <div class="showcase-slider-inner">
+        
+        <!-- Video Card 1 (Horizontal) -->
+        <div class="showcase-card horizontal liquid-glass" data-category="commercial">
+          <div class="showcase-video-wrapper">
+            <video class="showcase-video" loop muted playsinline>
+              <source src="https://res.cloudinary.com/dr7tspaod/video/upload/v1776180194/WhatsApp_Video_2026-04-14_at_10.02.07_AM_tpdnix.mp4" type="video/mp4">
+            </video>
+            <button class="mute-toggle" aria-label="Toggle Mute">
+              <i data-lucide="volume-x"></i>
+            </button>
+          </div>
+          <div class="showcase-meta">
+            <span class="showcase-tag">COMMERCIAL</span>
+            <h3>Elite Pacing Sequences</h3>
+          </div>
+        </div>
+ 
+        <!-- Video Card 2 (Horizontal) -->
+        <div class="showcase-card horizontal liquid-glass" data-category="narrative">
+          <div class="showcase-video-wrapper">
+            <video class="showcase-video" loop muted playsinline>
+              <source src="https://res.cloudinary.com/dr7tspaod/video/upload/v1776180207/WhatsApp_Video_2026-04-14_at_10.01.46_AM_l8xcmd.mp4" type="video/mp4">
+            </video>
+            <button class="mute-toggle" aria-label="Toggle Mute">
+              <i data-lucide="volume-x"></i>
+            </button>
+          </div>
+          <div class="showcase-meta">
+            <span class="showcase-tag">NARRATIVE</span>
+            <h3>Dynamic Storyboarding</h3>
+          </div>
+        </div>
+ 
+        <!-- Video Card 3 (Vertical) -->
+        <div class="showcase-card vertical liquid-glass" data-category="social">
+          <div class="showcase-video-wrapper">
+            <video class="showcase-video" loop muted playsinline>
+              <source src="https://res.cloudinary.com/dr7tspaod/video/upload/v1776180020/WhatsApp_Video_2026-04-14_at_10.00.37_AM_qtjnj3.mp4" type="video/mp4">
+            </video>
+            <button class="mute-toggle" aria-label="Toggle Mute">
+              <i data-lucide="volume-x"></i>
+            </button>
+          </div>
+          <div class="showcase-meta">
+            <span class="showcase-tag">SOCIAL HOOK</span>
+            <h3>9:16 Retention Loop</h3>
+          </div>
+        </div>
+ 
+        <!-- Video Card 4 (Horizontal) -->
+        <div class="showcase-card horizontal liquid-glass" data-category="luxury">
+          <div class="showcase-video-wrapper">
+            <video class="showcase-video" loop muted playsinline>
+              <source src="https://res.cloudinary.com/dr7tspaod/video/upload/v1776172406/Maldives_wdhsjt.mp4" type="video/mp4">
+            </video>
+            <button class="mute-toggle" aria-label="Toggle Mute">
+              <i data-lucide="volume-x"></i>
+            </button>
+          </div>
+          <div class="showcase-meta">
+            <span class="showcase-tag">LUXURY TRAVEL</span>
+            <h3>Cinematic Grading</h3>
+          </div>
+        </div>
+ 
+        <!-- Video Card 5 (Horizontal) -->
+        <div class="showcase-card horizontal liquid-glass" data-category="commercial">
+          <div class="showcase-video-wrapper">
+            <video class="showcase-video" loop muted playsinline>
+              <source src="https://res.cloudinary.com/dr7tspaod/video/upload/v1776172197/Camera_xhs_1755563645022_2_bpbto7.mp4" type="video/mp4">
+            </video>
+            <button class="mute-toggle" aria-label="Toggle Mute">
+              <i data-lucide="volume-x"></i>
+            </button>
+          </div>
+          <div class="showcase-meta">
+            <span class="showcase-tag">COMMERCIAL</span>
+            <h3>Visual Rhythms</h3>
+          </div>
+        </div>
+ 
+        <!-- Video Card 6 (Vertical) -->
+        <div class="showcase-card vertical liquid-glass" data-category="social">
+          <div class="showcase-video-wrapper">
+            <video class="showcase-video" loop muted playsinline>
+              <source src="https://res.cloudinary.com/dr7tspaod/video/upload/v1776174113/WhatsApp_Video_2026-04-14_at_9.59.28_AM_iitm0d.mp4" type="video/mp4">
+            </video>
+            <button class="mute-toggle" aria-label="Toggle Mute">
+              <i data-lucide="volume-x"></i>
+            </button>
+          </div>
+          <div class="showcase-meta">
+            <span class="showcase-tag">CREATOR REEL</span>
+            <h3>Dynamic Text Animations</h3>
+          </div>
+        </div>
+ 
+        <!-- Video Card 7 (Horizontal) -->
+        <div class="showcase-card horizontal liquid-glass" data-category="narrative">
+          <div class="showcase-video-wrapper">
+            <video class="showcase-video" loop muted playsinline>
+              <source src="https://res.cloudinary.com/dr7tspaod/video/upload/v1776171532/Ardroise_V1_rbcgdr.mp4" type="video/mp4">
+            </video>
+            <button class="mute-toggle" aria-label="Toggle Mute">
+              <i data-lucide="volume-x"></i>
+            </button>
+          </div>
+          <div class="showcase-meta">
+            <span class="showcase-tag">NARRATIVE</span>
+            <h3>Pro Sound Engineering</h3>
+          </div>
+        </div>
+ 
+        <!-- Video Card 8 (Vertical) -->
+        <div class="showcase-card vertical liquid-glass" data-category="luxury">
+          <div class="showcase-video-wrapper">
+            <video class="showcase-video" loop muted playsinline>
+              <source src="https://res.cloudinary.com/dr7tspaod/video/upload/v1776173282/Rosca_Cafe_qphg8s.mp4" type="video/mp4">
+            </video>
+            <button class="mute-toggle" aria-label="Toggle Mute">
+              <i data-lucide="volume-x"></i>
+            </button>
+          </div>
+          <div class="showcase-meta">
+            <span class="showcase-tag">BRAND FILM</span>
+            <h3>Warm Tonal Grading</h3>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Pricing Package Builder -->
+  <section class="section-padding pricing-section" id="pricing" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="pre-heading" style="color: var(--accent); font-weight: 600; letter-spacing: 0.15em; font-size: 11px;">TAILORED INVESTMENT</span>
+        <h2>Select Your Cinematic Strategy</h2>
+        <p>Order fixed-rate project packages directly via our Level 1 Fiverr desk, or build a custom retainer plan tailored to your monthly volume.</p>
+      </div>
+
+      <!-- Main Pricing Mode Switcher -->
+      <div class="pricing-mode-toggle">
+        <button class="pricing-mode-btn active" data-mode="packages">
+          <i data-lucide="package"></i> Standard Gig Packages
+        </button>
+        <button class="pricing-mode-btn" data-mode="calculator">
+          <i data-lucide="sliders"></i> Custom Retainer Builder
+        </button>
+      </div>
+
+      <!-- Currency Toggle Switcher -->
+      <div class="currency-toggle-wrapper">
+        <span class="currency-label active" id="currency-label-usd">USD ($)</span>
+        <button class="currency-switch-btn" id="currency-toggle-btn" aria-label="Toggle Currency between USD and PKR">
+          <span class="currency-switch-handle"></span>
+        </button>
+        <span class="currency-label" id="currency-label-pkr">PKR (₨)</span>
+      </div>
+
+      <!-- VIEW 1: Fiverr Gig Packages (Active by default) -->
+      <div id="pricing-packages-view" class="pricing-view active">
+        <div class="gig-tabs">
+          <button class="gig-tab-btn active" data-gig="longform">
+            <i data-lucide="youtube"></i> Professional YouTube, Vlogs & Ads
+          </button>
+          <button class="gig-tab-btn" data-gig="shortform">
+            <i data-lucide="smartphone"></i> Viral Shorts, Reels & TikToks
+          </button>
+        </div>
+
+        <!-- Gig Tab 1 Panel: Longform (YouTube/Ads/Vlogs) -->
+        <div id="gig-longform-panel" class="gig-panel active">
+          <div class="packages-grid">
+            <!-- Basic Starter Card -->
+            <div class="package-card liquid-glass">
+              <div class="package-badge-wrapper">
+                <span class="package-badge bg-gold">STARTER ✨</span>
+              </div>
+              <div>
+                <div class="package-price-wrap">
+                  <span class="p-currency" data-usd="$" data-pkr="₨">$</span>
+                  <span class="p-amount" data-usd="20" data-pkr="5,851">20</span>
+                </div>
+                <p class="package-desc">Up to 2-minute high-quality edits for YouTube, vlogs, promos, social media, and tutorials.</p>
+                <div class="package-meta-info">
+                  <span><i data-lucide="clock"></i> 2-Day Delivery</span>
+                  <span><i data-lucide="refresh-cw"></i> Unlimited Revisions</span>
+                </div>
+              </div>
+              <div class="package-divider"></div>
+              <ul class="package-features">
+                <li><i data-lucide="check" class="check-icon"></i> Up to 2 mins running time</li>
+                <li><i data-lucide="check" class="check-icon"></i> Color grading</li>
+                <li><i data-lucide="check" class="check-icon"></i> Sound design & mixing</li>
+                <li><i data-lucide="check" class="check-icon"></i> Subtitles</li>
+                <li class="disabled"><i data-lucide="x" class="x-icon"></i> Motion graphics</li>
+                <li class="disabled"><i data-lucide="x" class="x-icon"></i> Include source file</li>
+              </ul>
+              <div class="package-cta-wrap">
+                <a href="https://www.fiverr.com/s/xXvdoD1" target="_blank" class="btn btn-primary package-btn">Order Starter Package</a>
+              </div>
+            </div>
+
+            <!-- Standard Growth Card (Popular) -->
+            <div class="package-card liquid-glass popular">
+              <div class="popular-tag">MOST POPULAR</div>
+              <div class="package-badge-wrapper">
+                <span class="package-badge bg-purple">GROWTH 🚀</span>
+              </div>
+              <div>
+                <div class="package-price-wrap">
+                  <span class="p-currency" data-usd="$" data-pkr="₨">$</span>
+                  <span class="p-amount" data-usd="45" data-pkr="13,165">45</span>
+                </div>
+                <p class="package-desc">Crisp up to 5-minute video edits for vlogs, promos, travel, tutorials, ads & social media.</p>
+                <div class="package-meta-info">
+                  <span><i data-lucide="clock"></i> 3-Day Delivery</span>
+                  <span><i data-lucide="refresh-cw"></i> Unlimited Revisions</span>
+                </div>
+              </div>
+              <div class="package-divider"></div>
+              <ul class="package-features">
+                <li><i data-lucide="check" class="check-icon"></i> Up to 5 mins running time</li>
+                <li><i data-lucide="check" class="check-icon"></i> Color grading</li>
+                <li><i data-lucide="check" class="check-icon"></i> Sound design & mixing</li>
+                <li><i data-lucide="check" class="check-icon"></i> Subtitles</li>
+                <li><i data-lucide="check" class="check-icon"></i> Motion graphics</li>
+                <li class="disabled"><i data-lucide="x" class="x-icon"></i> Include source file</li>
+              </ul>
+              <div class="package-cta-wrap">
+                <a href="https://www.fiverr.com/s/xXvdoD1" target="_blank" class="btn btn-primary package-btn">Order Growth Package</a>
+              </div>
+            </div>
+
+            <!-- Premium PRO Card -->
+            <div class="package-card liquid-glass">
+              <div class="package-badge-wrapper">
+                <span class="package-badge bg-black">PRO 🎬</span>
+              </div>
+              <div>
+                <div class="package-price-wrap">
+                  <span class="p-currency" data-usd="$" data-pkr="₨">$</span>
+                  <span class="p-amount" data-usd="75" data-pkr="21,942">75</span>
+                </div>
+                <p class="package-desc">Up to 10-minute polished videos for vlogs, YouTube, wedding highlights, and corporate promos.</p>
+                <div class="package-meta-info">
+                  <span><i data-lucide="clock"></i> 4-Day Delivery</span>
+                  <span><i data-lucide="refresh-cw"></i> Unlimited Revisions</span>
+                </div>
+              </div>
+              <div class="package-divider"></div>
+              <ul class="package-features">
+                <li><i data-lucide="check" class="check-icon"></i> Up to 10 mins running time</li>
+                <li><i data-lucide="check" class="check-icon"></i> Pro color grading</li>
+                <li><i data-lucide="check" class="check-icon"></i> Premium sound design & mixing</li>
+                <li><i data-lucide="check" class="check-icon"></i> Subtitles & text overlays</li>
+                <li><i data-lucide="check" class="check-icon"></i> Custom motion graphics</li>
+                <li><i data-lucide="check" class="check-icon"></i> Include source file</li>
+              </ul>
+              <div class="package-cta-wrap">
+                <a href="https://www.fiverr.com/s/xXvdoD1" target="_blank" class="btn btn-primary package-btn">Order Pro Package</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gig Tab 2 Panel: Shortform (TikTok/Reels/Shorts) -->
+        <div id="gig-shortform-panel" class="gig-panel">
+          <div class="packages-grid">
+            <!-- Basic Growth Starter -->
+            <div class="package-card liquid-glass">
+              <div class="package-badge-wrapper">
+                <span class="package-badge bg-gold">GROWTH STARTER 💫</span>
+              </div>
+              <div>
+                <div class="package-price-wrap">
+                  <span class="p-currency" data-usd="$" data-pkr="₨">$</span>
+                  <span class="p-amount" data-usd="10" data-pkr="2,926">10</span>
+                </div>
+                <p class="package-desc">Up to 30s clean edit with immersive sound effects, dynamic pacing, and crisp text overlays.</p>
+                <div class="package-meta-info">
+                  <span><i data-lucide="clock"></i> 1-Day Delivery</span>
+                  <span><i data-lucide="refresh-cw"></i> Unlimited Revisions</span>
+                </div>
+              </div>
+              <div class="package-divider"></div>
+              <ul class="package-features">
+                <li><i data-lucide="check" class="check-icon"></i> Up to 30s running time</li>
+                <li><i data-lucide="check" class="check-icon"></i> Basic color grading</li>
+                <li><i data-lucide="check" class="check-icon"></i> Sound design & mixing</li>
+                <li><i data-lucide="check" class="check-icon"></i> Standard captions</li>
+                <li class="disabled"><i data-lucide="x" class="x-icon"></i> Emojis & stock assets</li>
+                <li class="disabled"><i data-lucide="x" class="x-icon"></i> Include source file</li>
+              </ul>
+              <div class="package-cta-wrap">
+                <a href="https://www.fiverr.com/s/WE4ZvNB" target="_blank" class="btn btn-primary package-btn">Order Growth Starter</a>
+              </div>
+            </div>
+
+            <!-- Standard Growth Engine (Best Value) -->
+            <div class="package-card liquid-glass popular">
+              <div class="popular-tag">BEST VALUE</div>
+              <div class="package-badge-wrapper">
+                <span class="package-badge bg-purple">GROWTH ENGINE ⚡</span>
+              </div>
+              <div>
+                <div class="package-price-wrap">
+                  <span class="p-currency" data-usd="$" data-pkr="₨">$</span>
+                  <span class="p-amount" data-usd="20" data-pkr="5,851">20</span>
+                </div>
+                <p class="package-desc">Up to 60s video with dynamic captions, animated emojis, sound effects, images, and pro grading.</p>
+                <div class="package-meta-info">
+                  <span><i data-lucide="clock"></i> 2-Day Delivery</span>
+                  <span><i data-lucide="refresh-cw"></i> Unlimited Revisions</span>
+                </div>
+              </div>
+              <div class="package-divider"></div>
+              <ul class="package-features">
+                <li><i data-lucide="check" class="check-icon"></i> Up to 60s running time</li>
+                <li><i data-lucide="check" class="check-icon"></i> Vibrant color grading</li>
+                <li><i data-lucide="check" class="check-icon"></i> Advanced sound design & mixing</li>
+                <li><i data-lucide="check" class="check-icon"></i> Dynamic subtitles & subtitles</li>
+                <li><i data-lucide="check" class="check-icon"></i> Emojis & stock overlays</li>
+                <li class="disabled"><i data-lucide="x" class="x-icon"></i> Advanced masking & motion assets</li>
+              </ul>
+              <div class="package-cta-wrap">
+                <a href="https://www.fiverr.com/s/WE4ZvNB" target="_blank" class="btn btn-primary package-btn">Order Growth Engine</a>
+              </div>
+            </div>
+
+            <!-- Premium Viral Domination -->
+            <div class="package-card liquid-glass">
+              <div class="package-badge-wrapper">
+                <span class="package-badge bg-black">VIRAL DOMINATION 🔥</span>
+              </div>
+              <div>
+                <div class="package-price-wrap">
+                  <span class="p-currency" data-usd="$" data-pkr="₨">$</span>
+                  <span class="p-amount" data-usd="40" data-pkr="11,702">40</span>
+                </div>
+                <p class="package-desc">Up to 60s advance edit with premium motion graphics, complex masking, rich SFX, and custom text.</p>
+                <div class="package-meta-info">
+                  <span><i data-lucide="clock"></i> 3-Day Delivery</span>
+                  <span><i data-lucide="refresh-cw"></i> Unlimited Revisions</span>
+                </div>
+              </div>
+              <div class="package-divider"></div>
+              <ul class="package-features">
+                <li><i data-lucide="check" class="check-icon"></i> Up to 60s running time</li>
+                <li><i data-lucide="check" class="check-icon"></i> High-end color grading</li>
+                <li><i data-lucide="check" class="check-icon"></i> Immersive Sound design & mixing</li>
+                <li><i data-lucide="check" class="check-icon"></i> Subtitles & text styling</li>
+                <li><i data-lucide="check" class="check-icon"></i> Premium motion graphics & masking</li>
+                <li><i data-lucide="check" class="check-icon"></i> Include source file</li>
+              </ul>
+              <div class="package-cta-wrap">
+                <a href="https://www.fiverr.com/s/WE4ZvNB" target="_blank" class="btn btn-primary package-btn">Order Viral Domination</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIEW 2: Custom Retainer Builder (Hidden by default) -->
+      <div id="pricing-calculator-view" class="pricing-view">
+        <div class="pricing-calculator-layout">
+          <!-- Interactive Inputs card -->
+          <div class="calculator-inputs liquid-glass">
+            <h3 class="calculator-card-title"><i data-lucide="sliders"></i> Customize Your Scope</h3>
+            
+            <!-- Step 1: Select Format -->
+            <div class="calculator-step">
+              <label class="step-label">1. Choose Content Format</label>
+              <div class="format-buttons-grid">
+                <button class="format-option active" data-format="social">
+                  <i data-lucide="smartphone"></i>
+                  <span>Vertical Content</span>
+                  <span class="format-desc">9:16 Shorts, Reels, TikToks</span>
+                </button>
+                <button class="format-option" data-format="youtube">
+                  <i data-lucide="youtube"></i>
+                  <span>Vlogs / YouTube</span>
+                  <span class="format-desc">16:9 Longform pacing</span>
+                </button>
+                <button class="format-option" data-format="brand">
+                  <i data-lucide="clapperboard"></i>
+                  <span>Commercial / Ad</span>
+                  <span class="format-desc">Luxury Brand Films & Promos</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Choose volume slider -->
+            <div class="calculator-step">
+              <div class="step-label-row">
+                <label class="step-label">2. Monthly Video Volume</label>
+                <span class="volume-readout" id="volume-readout">4 Videos / Month</span>
+              </div>
+              <div class="slider-container">
+                <input type="range" id="volume-slider" min="1" max="20" value="4" class="custom-range-slider">
+                <div class="slider-ticks">
+                  <span>1</span>
+                  <span>5</span>
+                  <span>10</span>
+                  <span>15</span>
+                  <span>20</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Fast Delivery Toggle -->
+            <div class="calculator-step">
+              <label class="step-label">3. Priority Service Options</label>
+              <div class="addons-grid">
+                <div class="addon-checkbox-card" data-addon="express" data-price="100">
+                  <div class="addon-check-indicator"></div>
+                  <div class="addon-text-wrap">
+                    <h4>Express 48-Hour Turnaround</h4>
+                    <p class="addon-price-label">Guaranteed priority rendering queue (+ $100 / video)</p>
+                  </div>
+                </div>
+                <div class="addon-checkbox-card" data-addon="source" data-price="50">
+                  <div class="addon-check-indicator"></div>
+                  <div class="addon-text-wrap">
+                    <h4>Premiere/Resolve Project Files</h4>
+                    <p class="addon-price-label">Full project package handover with assets (+ $50 / video)</p>
+                  </div>
+                </div>
+                <div class="addon-checkbox-card" data-addon="subtitles" data-price="25">
+                  <div class="addon-check-indicator"></div>
+                  <div class="addon-text-wrap">
+                    <h4>Multi-Language Caption Files</h4>
+                    <p class="addon-price-label">Translation and .SRT formatting (+ $25 / video)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estimator readout card -->
+          <div class="calculator-readout liquid-glass">
+            <div class="readout-header">
+              <span class="readout-chip">Your Curated Scope</span>
+              <h3>Plan Investment</h3>
+            </div>
+            
+            <div class="price-showcase">
+              <span class="price-currency" id="calc-currency">$</span>
+              <span class="price-amount" id="calculated-total">160</span>
+              <span class="price-period">/ month</span>
+            </div>
+
+            <div class="savings-banner" id="savings-banner" style="display: none;">
+              <i data-lucide="gift"></i> Bulk volume discount applied! Save <span id="savings-pct">10</span>%
+            </div>
+
+            <div class="divider"></div>
+
+            <h4 class="deliverables-title">Guaranteed Deliverables</h4>
+            <ul class="deliverables-list" id="deliverables-list">
+              <li><i data-lucide="check-circle-2"></i> Custom-Engineered Soundscapes & SFX</li>
+              <li><i data-lucide="check-circle-2"></i> Frame-Accurate Dynamic Color Grading</li>
+              <li><i data-lucide="check-circle-2"></i> High-Retention Visual Hooks & Triggers</li>
+              <li><i data-lucide="check-circle-2"></i> Unlimited Revision Loops on Frame.io</li>
+              <li><i data-lucide="check-circle-2"></i> Dedicated Lead Editor Communication Line</li>
+            </ul>
+
+            <div class="calc-ctas">
+              <a href="/contact.html" id="calc-hire-btn" class="btn btn-primary" style="width: 100%; text-align: center;">Book This Custom Retainer</a>
+              <a href="https://www.fiverr.com/themovixstudio" target="_blank" class="btn btn-outline" style="width: 100%; text-align: center; border-color: rgba(255,255,255,0.15); color: var(--text-muted);">Inquire on Fiverr Desk</a>
+            </div>
+            
+            <p class="custom-guarantee"><i data-lucide="shield-check"></i> 100% money-back satisfaction guarantee on your first draft.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding" style="background: var(--surface-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="pre-heading" style="color: var(--accent); font-weight: 600; letter-spacing: 0.15em; font-size: 11px;">REAL FEEDBACK</span>
+        <h2>Client Praise on Fiverr Desk</h2>
+        <p>We are rated <strong>4.9/5 stars</strong> based on 42 verified reviews from global creators and agencies.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <!-- Testimonial 1 -->
+        <div class="package-card liquid-glass">
+          <div>
+            <div class="testimonial-rating">
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+            </div>
+            <p class="testimonial-text" style="font-size: 0.95rem; font-family: var(--font-sans); color: var(--text); padding-left: 0; line-height: 1.6; margin-bottom: 1.5rem;">
+              "Highly satisfied with Movix Studio. Professional editing, on-time delivery, and top quality results. They understood the vision perfectly and delivered beyond expectations."
+            </p>
+          </div>
+          <div class="fiverr-author-meta">
+            <div class="fiverr-avatar">JE</div>
+            <div>
+              <h4 style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 700;">joshellen</h4>
+              <span class="fiverr-gig-info">YouTube & Vlog Editing</span>
+            </div>
+            <span class="fiverr-flag" title="Canada">🇨🇦</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="package-card liquid-glass">
+          <div>
+            <div class="testimonial-rating">
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+            </div>
+            <p class="testimonial-text" style="font-size: 0.95rem; font-family: var(--font-sans); color: var(--text); padding-left: 0; line-height: 1.6; margin-bottom: 1.5rem;">
+              "Great experience overall! The video editor was professional, responsive, and delivered a solid final product. The quality met my expectations, and communication was smooth. I would definitely recommend their services."
+            </p>
+          </div>
+          <div class="fiverr-author-meta">
+            <div class="fiverr-avatar">PC</div>
+            <div>
+              <h4 style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 700;">petsittercoach</h4>
+              <span class="fiverr-gig-info">Corporate Promo & YouTube</span>
+            </div>
+            <span class="fiverr-flag" title="United States">🇺🇸</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="package-card liquid-glass">
+          <div>
+            <div class="testimonial-rating">
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+            </div>
+            <p class="testimonial-text" style="font-size: 0.95rem; font-family: var(--font-sans); color: var(--text); padding-left: 0; line-height: 1.6; margin-bottom: 1.5rem;">
+              "Great experience! Fast delivery, excellent communication, and the video looks amazing. Movix E went above and beyond to make sure I was happy with the result. 10/10 service!"
+            </p>
+          </div>
+          <div class="fiverr-author-meta">
+            <div class="fiverr-avatar">E9</div>
+            <div>
+              <h4 style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 700;">ento_9</h4>
+              <span class="fiverr-gig-info">Vlogs & Cinematic Edits</span>
+            </div>
+            <span class="fiverr-flag" title="Canada">🇨🇦</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="package-card liquid-glass">
+          <div>
+            <div class="testimonial-rating">
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+            </div>
+            <p class="testimonial-text" style="font-size: 0.95rem; font-family: var(--font-sans); color: var(--text); padding-left: 0; line-height: 1.6; margin-bottom: 1.5rem;">
+              "Finally, we've found someone who can handle our media department. This reel proves that you are truly exceptional. Excellent pacing and subtitle timing!"
+            </p>
+          </div>
+          <div class="fiverr-author-meta">
+            <div class="fiverr-avatar">OU</div>
+            <div>
+              <h4 style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 700;">olenausa</h4>
+              <span class="fiverr-gig-info">Viral Tiktok & Reels</span>
+            </div>
+            <span class="fiverr-flag" title="United Kingdom">🇬🇧</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="pre-heading" style="color: var(--accent); font-weight: 600; letter-spacing: 0.15em; font-size: 11px;">COMMON INQUIRIES</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about our turn-around times, premium delivery formats, and cinematic editing workflows.</p>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="faq-list">
+          
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-1">
+              <h4>What is your average turn-around time for a video?</h4>
+              <div class="faq-icon-wrapper">
+                <i data-lucide="chevron-down"></i>
+              </div>
+            </button>
+            <div class="faq-content" id="faq-answer-1">
+              <div class="faq-content-inner">
+                <p class="faq-answer">
+                  Our standard delivery for high-end cinematic edits ranges between <strong>5 to 7 business days</strong> depending on complexity. If you have an urgent campaign, broadcast, or launch deadline, we offer an <strong>Express Delivery upgrade</strong> that guarantees pristine production-ready exports within <strong>48 hours</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-2">
+              <h4>What raw video formats do you support?</h4>
+              <div class="faq-icon-wrapper">
+                <i data-lucide="chevron-down"></i>
+              </div>
+            </button>
+            <div class="faq-content" id="faq-answer-2">
+              <div class="faq-content-inner">
+                <p class="faq-answer">
+                  We ingest and work with all major industry-standard formats, including <strong>ProRes, RED RAW, Blackmagic RAW, ARRI RAW, MP4, and MOV</strong>. Footage can be shot in any resolution up to 8K. You can deliver files to us via our secured, encrypted workspace links, or share via Frame.io, Dropbox, Google Drive, or NAS storage.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-3">
+              <h4>What does the typical post-production workflow look like?</h4>
+              <div class="faq-icon-wrapper">
+                <i data-lucide="chevron-down"></i>
+              </div>
+            </button>
+            <div class="faq-content" id="faq-answer-3">
+              <div class="faq-content-inner">
+                <p class="faq-answer">
+                  Our process is engineered to ensure seamless collaboration in 4 elite phases:
+                  <br><br>
+                  1. <strong>Strategy & Intake:</strong> We analyze your target demographic, branding cues, and pacing requirements.
+                  <br>
+                  2. <strong>Cinematic Craft:</strong> Our master editors build the timeline, craft pristine soundscapes, apply custom typography, and perform custom color grading.
+                  <br>
+                  3. <strong>Refinement Loop:</strong> We share a review link on Frame.io for your frame-accurate feedback.
+                  <br>
+                  4. <strong>Premium Delivery:</strong> We export and deliver the final master package along with optimized alternate aspect ratios for omni-channel distribution.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-4">
+              <h4>How do we provide feedback and request revisions?</h4>
+              <div class="faq-icon-wrapper">
+                <i data-lucide="chevron-down"></i>
+              </div>
+            </button>
+            <div class="faq-content" id="faq-answer-4">
+              <div class="faq-content-inner">
+                <p class="faq-answer">
+                  We use professional-grade video collaboration portals (such as <strong>Frame.io</strong>) that let you leave timestamped, frame-accurate comments and visual drawings directly on our video draft. All projects include dedicated <strong>revisions loops</strong> to guarantee that the final export perfectly translates your exact aesthetic vision.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-5">
+              <h4>Are professional sound design and color grading included?</h4>
+              <div class="faq-icon-wrapper">
+                <i data-lucide="chevron-down"></i>
+              </div>
+            </button>
+            <div class="faq-content" id="faq-answer-5">
+              <div class="faq-content-inner">
+                <p class="faq-answer">
+                  Yes, absolutely. We do not believe in half-finished products. Every single deliverable is treated to a <strong>full color grading suite</strong> using professional DaVinci Resolve workflows and features a <strong>custom-engineered sound design package</strong> with background soundscapes, hand-layered Foley effects, sound level normalization, and high-clarity voice mastering.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-6">
+              <h4>Do you specialize in vertical formats like TikTok, Reels, and YouTube Shorts?</h4>
+              <div class="faq-icon-wrapper">
+                <i data-lucide="chevron-down"></i>
+              </div>
+            </button>
+            <div class="faq-content" id="faq-answer-6">
+              <div class="faq-content-inner">
+                <p class="faq-answer">
+                  Yes, absolutely. We specialize in engineering high-impact, vertical-first campaigns and <strong>9:16 Retention Loops</strong>. By combining psychological pattern-interrupts, kinetic captions/text animations, and high-energy pacing, we optimize your clips specifically to retain attention in fast-scrolling mobile feeds and double your average watch time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-answer-7">
+              <h4>How do we start a project, and can we order via Fiverr?</h4>
+              <div class="faq-icon-wrapper">
+                <i data-lucide="chevron-down"></i>
+              </div>
+            </button>
+            <div class="faq-content" id="faq-answer-7">
+              <div class="faq-content-inner">
+                <p class="faq-answer">
+                  Getting started is seamless. You can initiate an edit by submitting your directives through our interactive brief form on the <strong>Contact</strong> page or by sending an email directly to <strong>collaborate@movixstudio.com</strong> (we guarantee responses within 12 hours, Monday through Saturday). For clients who prefer escrow or third-party platform security, we maintain an official boutique desk on <strong>fiverr.com/themovixstudio</strong> for instant booking and queue scheduling.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="pre-heading">Elevate Your Content</span>
+      <h2>Let's Craft Something <span>Masterful</span>.</h2>
+      <p>Stop settling for standard video editing. Work with a boutique house that treats every single frame as a work of art.</p>
+      <div class="hero-cta">
+        <a href="/contact.html" class="btn btn-primary">Get Started Now</a>
+        <a href="https://www.fiverr.com/themovixstudio" target="_blank" class="btn btn-outline" style="border-color: rgba(255, 255, 255, 0.3); color: #fff;">Order on Fiverr</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/index.html" class="logo-link">
+            <svg class="logo-svg" width="70" height="128" viewBox="0 0 70 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.1095 86C8.10954 88.5 8.10955 95 8.10955 95C8.10955 95 2.59148 90.1988 1.10955 86C-0.450147 81.5809 -0.287311 78.4733 1.10955 74C2.53045 69.4497 4.56775 67.1905 8.10955 64C10.8469 61.5342 16.1095 59 16.1095 59L31.1095 51L46.1095 44L59.1095 38L69.1096 32V45.2122C69.1096 45.2122 69.1096 49 68.6096 51C68.1096 53 66.6095 55 62.1095 59C57.6095 63 48.6095 66 37.1095 72C25.6095 78 14.1095 83.5 11.1095 86Z" fill="url(#g0)"/>
+              <path d="M68 16C69.5 5 68 0 68 0C68 0 17.5 23 8.50002 29C-0.5 35 -2.52934 50.7689 8.00003 61C8.00003 61 7 52.5 21.5 45C36 37.5 66.5 27 68 16Z" fill="url(#g1)"/>
+              <path d="M68.104 83C69.604 72 68.104 67 68.104 67C68.104 67 17.604 90 8.60403 96C-0.395981 102 -2.42532 117.769 8.10405 128C8.10405 128 7.10402 119.5 21.604 112C36.104 104.5 66.604 94 68.104 83Z" fill="url(#g1)"/>
+              <path d="M68 122L43 108.5V107L68 95V122Z" fill="url(#g2)"/>
+              <defs>
+                <linearGradient id="g0" x1="69" y1="58" x2="0" y2="56.5" gradientUnits="userSpaceOnUse">
+                  <stop offset="0.08" stop-color="#C5A438"/>
+                  <stop offset="0.32" stop-color="#FCED92"/>
+                  <stop offset="0.51" stop-color="#91722F"/>
+                  <stop offset="0.95" stop-color="#1F180E"/>
+                </linearGradient>
+                <linearGradient id="g1" x1="68" y1="30" x2="0" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#101010"/>
+                  <stop offset="0.30" stop-color="#504D4D"/>
+                  <stop offset="0.52" stop-color="#191919"/>
+                  <stop offset="1" stop-color="#070707"/>
+                </linearGradient>
+                <linearGradient id="g2" x1="43" y1="106" x2="68" y2="106" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#474747"/>
+                  <stop offset="1" stop-color="#141414"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="logo-text" style="color: #FAF8F3;">MOVIX<span class="studio-part">STUDIO</span></span>
+          </a>
+          <p>We are a boutique video editing agency that works at the intersection of psychology, cinema, and conversion.</p>
+          <div class="social-links">
+            <a href="https://www.fiverr.com/themovixstudio" target="_blank"><i data-lucide="external-link"></i></a>
+            <a href="/contact.html"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Our Agency</a></li>
+            <li><a href="/contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Integrations</h4>
+          <ul>
+            <li><a href="https://www.fiverr.com/themovixstudio" target="_blank">Fiverr Storefront</a></li>
+            <li><a href="#showcase">Portfolio Showcase</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <div class="footer-email-wrap">
+                <p class="footer-email-label">Email Us</p>
+                <div class="email-copy-container footer-copy-variant">
+                  <span class="email-address">collaborate@movixstudio.com</span>
+                  <button class="copy-email-trigger" data-email="collaborate@movixstudio.com" aria-label="Copy email address">
+                    <span class="copy-tooltip">Copy</span>
+                    <i data-lucide="copy"></i>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li><p>Global Delivery</p></li>
+            <li><p>Fiverr Top Pro Rated</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p style="color: var(--accent); opacity: 0.6; font-size: 11px; letter-spacing: 0.05em;">&copy; 2026 MovixStudio. All rights reserved.</p>
+        <p style="color: var(--accent); opacity: 0.6; font-size: 11px; letter-spacing: 0.05em;">Premium Cinematic Editing.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/script.js" type="module"></script>
+</body>
+</html>
